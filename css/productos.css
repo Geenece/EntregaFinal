@@ -1,0 +1,203 @@
+body {
+  background-image: url("..//icons/collage_9_16_recortado.jpg");
+  background-size: cover;
+  background-position: top;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  cursor: url(../icons/mouse-removebg-preview.png), auto;
+}
+
+nav.navbar {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  min-height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav.navbar .navbar-brand img {
+  max-height: 100px;
+}
+nav.navbar .navbar-nav {
+  margin-left: 75%;
+  display: flex;
+  gap: 1rem;
+}
+nav.navbar .nav-link {
+  font-size: 1rem;
+  color: rgb(0, 0, 0);
+  font-family: "Lucida Sans";
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+nav.navbar .nav-link:hover {
+  color: rgb(150, 75, 0);
+}
+
+main {
+  flex: 1;
+}
+@media (max-width: 1200px) {
+  main {
+    font-size: 90px;
+  }
+}
+@media (max-width: 768px) {
+  main {
+    font-size: 60px;
+  }
+}
+@media (max-width: 480px) {
+  main {
+    font-size: 36px;
+  }
+}
+
+main p {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Lucida Sans";
+  font-size: 20px;
+}
+@media (max-width: 1200px) {
+  main p {
+    font-size: 15px;
+  }
+}
+@media (max-width: 768px) {
+  main p {
+    font-size: 10px;
+  }
+}
+@media (max-width: 480px) {
+  main p {
+    font-size: 7px;
+  }
+}
+
+footer {
+  height: 15vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 30px;
+  gap: 40px;
+}
+@media (max-width: 768px) {
+  footer .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+footer .footer-text {
+  font-family: "Lucida Sans", sans-serif;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+footer .map-container iframe {
+  width: 250px;
+  height: 100px;
+  border: 0;
+}
+@media (max-width: 768px) {
+  footer .map-container iframe {
+    width: 90vw;
+    height: 200px;
+  }
+}
+
+#carouselExampleCaptions {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+#carouselExampleCaptions .carousel-inner {
+  display: flex;
+  height: 700px;
+}
+#carouselExampleCaptions .carousel-inner img {
+  max-width: 700px;
+  height: 700px;
+  margin: 0 auto;
+}
+
+.carousel-caption {
+  padding: 1rem;
+  border-radius: 8px;
+}
+.carousel-caption h5 {
+  font-size: 48px;
+  font-weight: bold;
+  color: #000000;
+  font-family: "Lucida Sans";
+}
+@media (max-width: 1200px) {
+  .carousel-caption h5 {
+    font-size: 36px;
+  }
+}
+@media (max-width: 768px) {
+  .carousel-caption h5 {
+    font-size: 28px;
+  }
+}
+@media (max-width: 480px) {
+  .carousel-caption h5 {
+    font-size: 20px;
+  }
+}
+.carousel-caption p {
+  font-size: 20px;
+  color: #000000;
+  font-family: "Lucida Sans";
+}
+@media (max-width: 768px) {
+  .carousel-caption p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 480px) {
+  .carousel-caption p {
+    font-size: 14px;
+  }
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 20px;
+  height: 5px;
+  background-color: #fff;
+  opacity: 0.5;
+  border-radius: 4px;
+  transition: opacity 0.3s;
+}
+.carousel-indicators [data-bs-target].active {
+  opacity: 1;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  background-size: 50%;
+  width: 3rem;
+  height: 3rem;
+}
